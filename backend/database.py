@@ -4,7 +4,8 @@ from sqlalchemy.orm import sessionmaker
 
 # GANTI 'password_kamu' DENGAN PASSWORD ROOT MYSQL-MU
 # Versi untuk XAMPP (password kosong)
-DATABASE_URL = "mysql+mysqlclient://root:@localhost/accountech_db"
+# Versi baru dengan PyMySQL
+DATABASE_URL = "mysql+pymysql://root:@localhost/accountech_db"
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
