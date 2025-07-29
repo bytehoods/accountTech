@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Layout from './components/Layout'; // Impor komponen Layout
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      {/* Nanti di sini kita akan meletakkan halaman-halaman kita, 
+          misalnya halaman Kelola Kas, Produk, dll. */}
+      <h1 className="text-2xl font-bold text-gray-800">
+        Selamat Datang di Dashboard AccounTech!
+      </h1>
+      <p className="mt-2 text-gray-600">
+        Halaman konten utama akan muncul di sini.
+      </p>
+    </Layout>
   );
 }
 
